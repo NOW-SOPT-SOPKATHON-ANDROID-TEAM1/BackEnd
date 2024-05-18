@@ -10,7 +10,7 @@ NOW SOPT SOPKATHON ANDROID 1조 서버 레포입니다🍀
 <br>
 
 ## TEAM
-|||
+|![image](https://github.com/NOW-SOPT-SOPKATHON-ANDROID-TEAM1/BackEnd/assets/91695537/7cb01573-c47f-407d-9ddc-d3c52671a369)|![image](https://github.com/NOW-SOPT-SOPKATHON-ANDROID-TEAM1/BackEnd/assets/91695537/bb72d82b-343c-4976-82c4-06a71fd4c07b)|
 |:---:|:---:|
 |최영철|이예린|
 |[softmoca](https://github.com/softmoca)|[lxxyxin](https://github.com/lxxyxin)|

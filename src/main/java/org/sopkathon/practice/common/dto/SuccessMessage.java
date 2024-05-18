@@ -1,15 +1,22 @@
-package org.sopkathon.practice.common.dto;
+package sopt.seminar.sopt.common.dto;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import org.springframework.http.HttpStatus;
+import java.util.Optional;
+import sopt.seminar.sopt.common.dto.response.statusEnum.SuccessStatus;
 
-@Getter
-@AllArgsConstructor
-public enum SuccessMessage {
+public record SuccessMessage<T>(
 
-    BLOG_CREATE_SUCCESS(HttpStatus.CREATED.value(),"블로그 생성이 완료되었습니다."),
-    ;
-    private final int status;
-    private final String message;
+    int status,
+    String message,
+    Optional<T> data
+) {
+
+  public static <T> SuccessMessage<T> of(SuccessStatus successStatus) {
+    return new SuccessMessage(successStatus.getStatus(), successStatus.getMessage(),
+        Optional.empty());
+  }
+
+  public static <T> SuccessMessage<T> of(SuccessStatus successStatus, T data) {
+    return new SuccessMessage(successStatus.getStatus(), successStatus.getMessage(),
+        Optional.of(data));
+  }
 }

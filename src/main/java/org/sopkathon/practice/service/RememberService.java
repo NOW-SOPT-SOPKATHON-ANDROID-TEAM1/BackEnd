@@ -39,7 +39,7 @@ public class RememberService {
 
     public RememberFindDto getRemember() {
         Random random = new Random();
-        long rememberId = 1 + random.nextInt(10); // 1부터 10 사이의 랜덤 값 생성
+        long rememberId = 1 + random.nextInt(5); // 1부터 10 사이의 랜덤 값 생성
 
         Optional<Remember> rememberOptional = rememberRepository.findById(rememberId);
         if (rememberOptional.isPresent()) {

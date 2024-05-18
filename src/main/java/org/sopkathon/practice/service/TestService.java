@@ -7,7 +7,6 @@ import org.sopkathon.practice.repository.TestRepository;
 import org.sopkathon.practice.service.dto.TestCreateRequest;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
 
@@ -18,11 +17,11 @@ public class TestService {
     private final S3Service s3Service;
     private static final String TEST_S3_UPLOAD_FOLDER = "test/";
     @Transactional
-    public String create(TestCreateRequest testCreateRequest, MultipartFile file){
+    public String create(TestCreateRequest testCreateRequest){
         try {
             Test test = testRepository.save(Test.create(
                     testCreateRequest.category(),
-                    s3Service.uploadImage(TEST_S3_UPLOAD_FOLDER, file),
+                    s3Service.uploadImage(TEST_S3_UPLOAD_FOLDER, testCreateRequest.image()),
                     testCreateRequest.content()
             ));
             return test.getId().toString();

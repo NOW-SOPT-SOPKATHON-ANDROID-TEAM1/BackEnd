@@ -5,6 +5,17 @@ NOW SOPT SOPKATHON ANDROID 1조 서버 레포입니다🍀
 ## Project
   ### 좋았잖아, 우리
 > **NOW-SOPT-SOPKATHON-ANDROID-TEAM1** - Backend<br/>
+#### 서비스 이름 및 간단한 소개
+- 서비스 이름: "좋았잖아, 우리"
+
+- 간단한 소개: 사람들은 일상 속에서 +의 감정(긍정적 감정)과 -의 감정(부정적 감정)을 모두 느끼지만, (-)의 감정에 더 매몰되기 때문에, 나의 삶을 “마이너스의 삶”으로 인식하게 됩니다.
+
+**"좋았잖아, 우리" 서비스는 '일상 속 주로 부정적인 감정을 느끼는 사람들이 행복한 순간의 기록을 통해 긍정적인 감정을 리마인드 할 수 있도록' 도와줍니다.**
+
+#### 주요기능
+1. 온보딩: 이름 입력 후 좋았던 추억이 담긴 사진 5개 업로드
+2. 기록하기: 좋았던 추억이 담긴 사진과 텍스트를 기록하여 업로드
+3. 리마인드 팝업: 부정적인 감정을 느낄 경우, 버튼을 클릭 시, 좋았던 추억이 담긴 사진과 텍스트를 담은 팝업창 보여주기
 
 --- 
 <br>
@@ -15,7 +26,7 @@ NOW SOPT SOPKATHON ANDROID 1조 서버 레포입니다🍀
 |최영철|이예린|
 |[softmoca](https://github.com/softmoca)|[lxxyxin](https://github.com/lxxyxin)|
 |담당|담당|
-|- AWS 세팅 및 배포 <br> - ERD 설계 <br> | - config 세팅 <br> - ERD 설계 <br>|
+|- AWS 세팅 및 배포 <br> - ERD 설계 <br> - 리마인드 조회 API 구현 | - config 세팅 <br> - ERD 설계 <br> - 기록 생성 API 구현|
 
 <br>
 
@@ -81,6 +92,8 @@ ex) UserController
 ## ER Diagram
 
 <br>
+<img width="636" alt="스크린샷 2024-05-19 오전 12 45 53" src="https://github.com/NOW-SOPT-SOPKATHON-ANDROID-TEAM1/BackEnd/assets/91695537/afe5b13d-1380-4f25-8569-1c36c7cb71f8">
+
 <br>
 
 

@@ -5,7 +5,6 @@ import org.sopkathon.practice.service.TestService;
 import org.sopkathon.practice.service.dto.TestCreateRequest;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.multipart.MultipartFile;
 
 import java.net.URI;
 
@@ -17,9 +16,8 @@ public class TestController {
 
     @PostMapping
     public ResponseEntity createTest(
-            @ModelAttribute TestCreateRequest testCreateRequest,
-            @RequestParam("file")MultipartFile file
+            @ModelAttribute TestCreateRequest testCreateRequest
             ){
-        return ResponseEntity.created(URI.create(testService.create(testCreateRequest, file))).build();
+        return ResponseEntity.created(URI.create(testService.create(testCreateRequest))).build();
     }
 }

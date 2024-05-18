@@ -89,6 +89,11 @@ ex) UserController
 
 그 외 모든 변수명은 **lowerCamelCase** 사용
 
+## API 명세서
+👉 [ 좋았잖아, 우리 API 명세서 보러가기](https://www.notion.so/API-b8a10ffafdd84a7ba78b130bd21b5152)
+
+
+
 ## ER Diagram
 
 <br>

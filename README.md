@@ -97,7 +97,7 @@ ex) UserController
 ## ER Diagram
 
 <br>
-<img width="636" alt="스크린샷 2024-05-19 오전 12 45 53" src="https://github.com/NOW-SOPT-SOPKATHON-ANDROID-TEAM1/BackEnd/assets/91695537/afe5b13d-1380-4f25-8569-1c36c7cb71f8">
+<img width="788" alt="스크린샷 2024-05-19 오전 1 19 21" src="https://github.com/NOW-SOPT-SOPKATHON-ANDROID-TEAM1/BackEnd/assets/91695537/17736f87-08e6-487b-9087-e392c4429df3">
 
 <br>
 
